@@ -35,10 +35,8 @@ export function Footer() {
                   sizes="64px"
                 />
               </div>
-              <div className="flex flex-col">
-                <span className="font-serif text-xl font-medium">
-                  {content.brand.name}
-                </span>
+              <div className="flex flex-col font-extrabold">
+                <span className=" text-xl">{content.brand.name}</span>
                 <span className="text-sm text-white/80 -mt-1">
                   {content.brand.tagline}
                 </span>
@@ -108,9 +106,14 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <p className="text-white/60 text-sm">
-              © {new Date().getFullYear()} {content.footer.legal.copyright}
-            </p>
+            <div className="flex flex-col items-center md:items-start space-y-2">
+              <p className="text-white/60 text-sm">
+                © {new Date().getFullYear()} {content.footer.legal.copyright}
+              </p>
+              <p className="text-white/40 text-xs">
+                CNPJ: {content.footer.contact.cnpj}
+              </p>
+            </div>
           </div>
         </div>
       </div>

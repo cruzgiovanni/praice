@@ -20,11 +20,11 @@ const iconMap = {
 
 export function TrustSignals() {
   return (
-    <section className="py-20 bg-white">
+    <section className="pt-60 bg-gradient-to-b from-sage/20 via-cognac/10 to-white -mt-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Trust Features */}
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-medium text-text-primary mb-4">
+          <h2 className="font-extrabold text-4xl md:text-5xl text-text-primary mb-4">
             {content.trust.title}
           </h2>
           <p className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto">
@@ -39,7 +39,7 @@ export function TrustSignals() {
             return (
               <div
                 key={index}
-                className="text-center p-8 rounded-2xl hover:shadow-card transition-all duration-300 hover:-translate-y-1 group"
+                className="text-center p-8 rounded-2xl bg-white/80 backdrop-blur-sm hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 group"
               >
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-cognac/10 rounded-full mb-6 group-hover:bg-cognac/20 transition-colors duration-300">
                   <IconComponent className="w-8 h-8 text-cognac" />
@@ -56,8 +56,8 @@ export function TrustSignals() {
         </div>
 
         {/* Testimonials */}
-        <div className="bg-surface rounded-3xl p-12">
-          <h3 className="font-serif text-3xl font-medium text-center text-text-primary mb-12">
+        <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-12 shadow-subtle">
+          <h3 className="text-3xl font-extrabold text-center text-text-primary mb-12">
             O Que Nossos Clientes Dizem
           </h3>
 

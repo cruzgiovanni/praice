@@ -20,7 +20,7 @@ export function Header() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-serif text-xl font-medium text-text-primary">
+              <span className="text-xl font-extrabold text-text-primary">
                 {content.brand.name}
               </span>
               <span className="text-xs text-text-secondary -mt-1">

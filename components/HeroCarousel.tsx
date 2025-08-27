@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { Heart, ChevronLeft, ChevronRight } from "lucide-react"
 import { content } from "@/data/content"
 
 export function HeroCarousel() {
@@ -52,9 +52,13 @@ export function HeroCarousel() {
 
           <div className="relative z-10 h-full flex items-center justify-center text-center text-white drop-shadow-2xl">
             <div className="max-w-4xl mx-auto px-6 lg:px-8">
+              <div className="flex items-center justify-center gap-2 py-12 text-white/80 drop-shadow-2xl">
+                <Heart className="w-4 h-4 " />
+                <p className="">Hortolândia - Sumaré - Monte Mor</p>
+              </div>
               {slide.price ? (
                 <div className="space-y-6">
-                  <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium mb-4 leading-tight animate-fade-in">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl mb-4 leading-tight animate-fade-in font-extrabold">
                     {slide.title}
                   </h1>
                   <p className="text-xl md:text-2xl text-white/90 mb-6 animate-slide-up">
@@ -93,7 +97,7 @@ export function HeroCarousel() {
                 </div>
               ) : (
                 <div>
-                  <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-medium mb-6 leading-tight animate-fade-in">
+                  <h1 className=" text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight animate-fade-in">
                     {slide.title}
                   </h1>
                   <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed animate-slide-up">
@@ -131,16 +135,16 @@ export function HeroCarousel() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-6 top-1/2 -translate-y-1/2 z-20 p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-all duration-300 group"
+        className="absolute left-6 top-1/2 -translate-y-1/2 z-20 p-1.5 md:p-2 bg-white/10 rounded-full hover:bg-white/20 hover:scale-110 transition-all duration-300 group"
       >
-        <ChevronLeft className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
+        <ChevronLeft className="w-4 h-3 md:w-6 md:h-5 text-white/80 group-hover:text-white transition-colors" />
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-6 top-1/2 -translate-y-1/2 z-20 p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-all duration-300 group"
+        className="absolute right-6 top-1/2 -translate-y-1/2 z-20 p-1.5 md:p-2 bg-white/10 rounded-full hover:bg-white/20 hover:scale-110 transition-all duration-300 group"
       >
-        <ChevronRight className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
+        <ChevronRight className="w-4 h-3 md:w-6 md:h-5 text-white/80 group-hover:text-white transition-colors" />
       </button>
 
       {/* Dots Indicator */}

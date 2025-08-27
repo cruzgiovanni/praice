@@ -14,10 +14,10 @@ export function FAQ() {
   }
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-28 bg-white">
       <div className="max-w-4xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-medium text-text-primary mb-4">
+          <h2 className="font-extrabold text-4xl md:text-5xl text-text-primary mb-4">
             {content.faq.title}
           </h2>
           <p className="text-lg md:text-xl text-text-secondary">

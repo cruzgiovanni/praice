@@ -20,95 +20,21 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
-const products = [
-  {
-    id: 1,
-    name: "Living Integrado",
-    description:
-      "Ambientes conectados que maximizam espaços e criam fluidez perfeita entre sala e cozinha",
-    icon: Home,
-    image:
-      "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=800",
-    hoverImage:
-      "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
-    features: [
-      "Móveis multifuncionais",
-      "Otimização de espaço",
-      "Design contemporâneo",
-    ],
-    highlight: "Integração sob medida que amplia espaços.",
-  },
-  {
-    id: 2,
-    name: "Quartos",
-    description:
-      "Refúgios de tranquilidade com soluções inteligentes de armazenamento e conforto",
-    icon: Bed,
-    image:
-      "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=800",
-    hoverImage:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
-    features: [
-      "Guarda-roupas planejados",
-      "Cabeceiras exclusivas",
-      "Criados-mudos integrados",
-    ],
-    highlight: "Conforto acústico e organização inteligente.",
-  },
-  {
-    id: 3,
-    name: "Cozinhas",
-    description:
-      "Espaços gourmet que transformam o ato de cozinhar em uma experiência prazerosa",
-    icon: ChefHat,
-    image: "https://images.pexels.com/photos/6489127/pexels-photo-6489127.jpeg",
-    hoverImage:
-      "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=800",
-    features: [
-      "Bancadas em quartzo",
-      "Armários até o teto",
-      "Ilhas multifuncionais",
-    ],
-    highlight: "Fluxo perfeito entre preparo e convivência.",
-  },
-  {
-    id: 4,
-    name: "Home Office",
-    description:
-      "Escritórios integrados que unem produtividade e design em perfeita harmonia",
-    icon: Monitor,
-    image:
-      "https://images.pexels.com/photos/4050388/pexels-photo-4050388.jpeg?auto=compress&cs=tinysrgb&w=800",
-    hoverImage:
-      "https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=800",
-    features: [
-      "Mesas ergonômicas",
-      "Estantes modulares",
-      "Iluminação integrada",
-    ],
-    highlight: "Ergonomia, acústica e estética alinhadas.",
-  },
-  {
-    id: 5,
-    name: "Banheiros",
-    description:
-      "Spas pessoais com acabamentos luxuosos e funcionalidade excepcional",
-    icon: Bath,
-    image:
-      "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=800",
-    hoverImage:
-      "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=800",
-    features: ["Móveis sob medida", "Espelhos iluminados", "Nichos integrados"],
-    highlight: "Materiais resistentes e sensorialidade de spa.",
-  },
-]
+// Icon mapping for the products
+const iconMap = {
+  Home,
+  Bed,
+  ChefHat,
+  Monitor,
+  Bath,
+}
 
 export function ProductsSection() {
   const [hoveredProduct, setHoveredProduct] = useState<number | null>(null)
   const [selectedProduct, setSelectedProduct] = useState<number>(1)
 
   return (
-    <section className="py-24 bg-gradient-to-br from-primary via-white to-surface relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-primary via-white to-surface relative overflow-hidden rounded-b-[80px]">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-72 h-72 bg-cognac rounded-full blur-3xl"></div>
@@ -123,7 +49,7 @@ export function ProductsSection() {
             <span className="text-cognac font-medium">Produtos Exclusivos</span>
           </div>
 
-          <h2 className="font-serif text-5xl md:text-6xl font-medium text-text-primary mb-6 leading-tight">
+          <h2 className="font-extrabold text-5xl md:text-6xl text-text-primary mb-6 leading-tight">
             Ambientes que
             <span className="block text-cognac">Inspiram Vida</span>
           </h2>
@@ -141,9 +67,13 @@ export function ProductsSection() {
             <div className="relative h-[600px] rounded-3xl overflow-hidden group">
               <Image
                 src={
-                  products.find((p) => p.id === selectedProduct)?.image || ""
+                  content.products.find((p) => p.id === selectedProduct)
+                    ?.image || ""
                 }
-                alt={products.find((p) => p.id === selectedProduct)?.name || ""}
+                alt={
+                  content.products.find((p) => p.id === selectedProduct)
+                    ?.name || ""
+                }
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -153,12 +83,16 @@ export function ProductsSection() {
 
               <div className="absolute bottom-8 left-8 right-8 text-white">
                 <div className="flex items-center space-x-3 mb-4">
-                  {products.find((p) => p.id === selectedProduct)?.icon && (
+                  {content.products.find((p) => p.id === selectedProduct)
+                    ?.icon && (
                     <div className="p-3 bg-white/20 backdrop-blur-sm rounded-full">
                       {(() => {
-                        const IconComponent = products.find(
+                        const iconName = content.products.find(
                           (p) => p.id === selectedProduct
                         )?.icon
+                        const IconComponent = iconName
+                          ? iconMap[iconName as keyof typeof iconMap]
+                          : null
                         return IconComponent ? (
                           <IconComponent className="w-6 h-6" />
                         ) : null
@@ -167,11 +101,14 @@ export function ProductsSection() {
                   )}
                   <div>
                     <h3 className="text-3xl font-serif font-medium">
-                      {products.find((p) => p.id === selectedProduct)?.name}
+                      {
+                        content.products.find((p) => p.id === selectedProduct)
+                          ?.name
+                      }
                     </h3>
                     <p className="text-white/80">
                       {
-                        products.find((p) => p.id === selectedProduct)
+                        content.products.find((p) => p.id === selectedProduct)
                           ?.highlight
                       }
                     </p>
@@ -179,11 +116,14 @@ export function ProductsSection() {
                 </div>
 
                 <p className="text-lg text-white/90 mb-6 leading-relaxed">
-                  {products.find((p) => p.id === selectedProduct)?.description}
+                  {
+                    content.products.find((p) => p.id === selectedProduct)
+                      ?.description
+                  }
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {products
+                  {content.products
                     .find((p) => p.id === selectedProduct)
                     ?.features.map((feature, index) => (
                       <span
@@ -194,18 +134,13 @@ export function ProductsSection() {
                       </span>
                     ))}
                 </div>
-
-                {/* <button className="inline-flex items-center space-x-2 px-6 py-3 bg-cognac hover:bg-accent text-white font-medium rounded-full transition-all duration-300 hover:shadow-elevated hover:scale-105">
-                  <span>Ver Detalhes</span>
-                  <ArrowRight className="w-5 h-5" />
-                </button> */}
               </div>
             </div>
           </div>
 
           {/* Product Cards - RIGHT SIDE PC VERSION */}
           <div className="space-y-4">
-            {products.map((product) => (
+            {content.products.map((product) => (
               <div
                 key={product.id}
                 className={`relative p-6 rounded-2xl cursor-pointer transition-all duration-500 hover:shadow-elevated hover:-translate-y-1 ${
@@ -225,13 +160,19 @@ export function ProductsSection() {
                         : "bg-cognac/10"
                     }`}
                   >
-                    <product.icon
-                      className={`w-6 h-6 ${
-                        selectedProduct === product.id
-                          ? "text-white"
-                          : "text-cognac"
-                      }`}
-                    />
+                    {(() => {
+                      const IconComponent =
+                        iconMap[product.icon as keyof typeof iconMap]
+                      return IconComponent ? (
+                        <IconComponent
+                          className={`w-6 h-6 ${
+                            selectedProduct === product.id
+                              ? "text-white"
+                              : "text-cognac"
+                          }`}
+                        />
+                      ) : null
+                    })()}
                   </div>
 
                   <div className="flex-1">
@@ -274,7 +215,7 @@ export function ProductsSection() {
         <div className="lg:hidden mb-16">
           <Carousel opts={{ align: "start", loop: true }}>
             <CarouselContent>
-              {products.map((product) => (
+              {content.products.map((product) => (
                 <CarouselItem key={product.id}>
                   <div className="rounded-3xl overflow-hidden bg-white shadow-card">
                     <div className="relative h-64">
@@ -289,7 +230,13 @@ export function ProductsSection() {
                       <div className="absolute bottom-4 left-4 right-4 text-white">
                         <div className="flex items-center space-x-3 mb-2">
                           <div className="p-2 bg-white/20 backdrop-blur-sm rounded-full">
-                            <product.icon className="w-5 h-5" />
+                            {(() => {
+                              const IconComponent =
+                                iconMap[product.icon as keyof typeof iconMap]
+                              return IconComponent ? (
+                                <IconComponent className="w-5 h-5" />
+                              ) : null
+                            })()}
                           </div>
                           <h3 className="text-2xl font-serif font-medium">
                             {product.name}
@@ -327,7 +274,7 @@ export function ProductsSection() {
 
         {/* CTA Section */}
         <div className="text-center bg-white rounded-3xl p-12 shadow-card">
-          <h3 className="font-serif text-3xl font-medium text-text-primary mb-4">
+          <h3 className="text-3xl font-extrabold text-text-primary mb-4">
             Pronto para Transformar Seu Lar?
           </h3>
           <p className="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
@@ -345,7 +292,7 @@ export function ProductsSection() {
                 window.open(url, "_blank")
               }}
             >
-              Agendar Consulta Gratuita
+              Fale conosco
             </button>
           </div>
         </div>

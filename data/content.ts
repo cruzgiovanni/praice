@@ -13,17 +13,6 @@ export const content = {
     more: [],
   },
 
-  // Header Promotion
-  headerPromo: {
-    title: "APÊ COMPLETO BRANCO",
-    subtitle: "5 AMBIENTES | ATÉ 56MTS²",
-    price: "R$17.680",
-    paymentOptions: {
-      cash: "À VISTA",
-      installments: "OU 18X DE R$1.180 NO CARTÃO",
-    },
-  },
-
   // Hero Carousel
   hero: {
     slides: [
@@ -67,68 +56,98 @@ export const content = {
     ],
   },
 
-  // Featured Collections
-  collections: {
-    title: "Ambientes Planejados",
-    subtitle:
-      "Projetos completos que transformam apartamentos de até 56m² em espaços extraordinários",
-    items: [
-      {
-        id: 1,
-        name: "Living Integrado",
-        description:
-          "Sala e cozinha em harmonia perfeita, otimizando cada metro quadrado",
-        image:
-          "https://images.pexels.com/photos/7195742/pexels-photo-7195742.jpeg",
-        roomContext:
-          "https://images.pexels.com/photos/7195742/pexels-photo-7195742.jpeg",
-        itemCount: "12+ peças",
-        priceRange: "A partir de R$ 8.900",
-        isNew: true,
-      },
-      {
-        id: 2,
-        name: "Quarto Master",
-        description:
-          "Móveis planejados que criam um refúgio de tranquilidade e organização",
-        image:
-          "https://images.pexels.com/photos/21345931/pexels-photo-21345931.png",
-        roomContext:
-          "https://images.pexels.com/photos/21345931/pexels-photo-21345931.png",
-        itemCount: "8+ peças",
-        priceRange: "A partir de R$ 5.400",
-      },
-      {
-        id: 3,
-        name: "Cozinha Gourmet",
-        description:
-          "Design funcional que transforma cozinhas compactas em espaços de chef",
-        image:
-          "https://images.pexels.com/photos/7214449/pexels-photo-7214449.jpeg",
-        roomContext:
-          "https://images.pexels.com/photos/7214449/pexels-photo-7214449.jpeg",
-        itemCount: "15+ peças",
-        priceRange: "A partir de R$ 12.200",
-      },
-      {
-        id: 4,
-        name: "Home Office",
-        description:
-          "Workspace integrado que une produtividade e design sofisticado",
-        image:
-          "https://images.pexels.com/photos/2349211/pexels-photo-2349211.jpeg",
-        roomContext:
-          "https://images.pexels.com/photos/2349211/pexels-photo-2349211.jpeg",
-        itemCount: "6+ peças",
-        priceRange: "A partir de R$ 3.800",
-        isNew: true,
-      },
-    ],
-  },
+  // Products Section
+  products: [
+    {
+      id: 1,
+      name: "Living Integrado",
+      description:
+        "Ambientes conectados que maximizam espaços e criam fluidez perfeita entre sala e cozinha",
+      icon: "Home",
+      image:
+        "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=800",
+      hoverImage:
+        "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+      features: [
+        "Móveis multifuncionais",
+        "Otimização de espaço",
+        "Design contemporâneo",
+      ],
+      highlight: "Integração sob medida que amplia espaços.",
+    },
+    {
+      id: 2,
+      name: "Quartos",
+      description:
+        "Refúgios de tranquilidade com soluções inteligentes de armazenamento e conforto",
+      icon: "Bed",
+      image:
+        "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=800",
+      hoverImage:
+        "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=800",
+      features: [
+        "Guarda-roupas planejados",
+        "Cabeceiras exclusivas",
+        "Criados-mudos integrados",
+      ],
+      highlight: "Conforto acústico e organização inteligente.",
+    },
+    {
+      id: 3,
+      name: "Cozinhas",
+      description:
+        "Espaços gourmet que transformam o ato de cozinhar em uma experiência prazerosa",
+      icon: "ChefHat",
+      image:
+        "https://images.pexels.com/photos/6489127/pexels-photo-6489127.jpeg?auto=compress&cs=tinysrgb&w=800",
+      hoverImage:
+        "https://images.pexels.com/photos/6489127/pexels-photo-6489127.jpeg?auto=compress&cs=tinysrgb&w=800",
+      features: [
+        "Bancadas em quartzo",
+        "Armários até o teto",
+        "Ilhas multifuncionais",
+      ],
+      highlight: "Fluxo perfeito entre preparo e convivência.",
+    },
+    {
+      id: 4,
+      name: "Home Office",
+      description:
+        "Escritórios integrados que unem produtividade e design em perfeita harmonia",
+      icon: "Monitor",
+      image:
+        "https://images.pexels.com/photos/4050388/pexels-photo-4050388.jpeg?auto=compress&cs=tinysrgb&w=800",
+      hoverImage:
+        "https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=800",
+      features: [
+        "Mesas ergonômicas",
+        "Estantes modulares",
+        "Iluminação integrada",
+      ],
+      highlight: "Ergonomia, acústica e estética alinhadas.",
+    },
+    {
+      id: 5,
+      name: "Banheiros",
+      description:
+        "Spas pessoais com acabamentos luxuosos e funcionalidade excepcional",
+      icon: "Bath",
+      image:
+        "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=800",
+      hoverImage:
+        "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=800",
+      features: [
+        "Móveis sob medida",
+        "Espelhos iluminados",
+        "Nichos integrados",
+      ],
+      highlight: "Materiais resistentes e sensorialidade de spa.",
+    },
+  ],
 
   // Trust Signals
   trust: {
-    title: "Por Que Escolher a Casa Luxe",
+    title: "Por Que Escolher a Praice",
     subtitle: "Comprometimento com excelência em cada detalhe",
     signals: [
       {
@@ -205,7 +224,7 @@ export const content = {
       {
         question: "Vocês atendem apartamentos de qualquer tamanho?",
         answer:
-          "Especializamo-nos em apartamentos de até 56m², mas atendemos espaços maiores. Cada projeto é desenvolvido sob medida para suas necessidades.",
+          "Sim. Cada projeto é desenvolvido sob medida para suas necessidades.",
       },
       {
         question: "É possível personalizar cores e acabamentos?",
@@ -239,6 +258,7 @@ export const content = {
       phone: "(19) 97114-2860",
       email: "xxxx@xxxx.com",
       whatsapp: "5519971142860",
+      cnpj: "xxxxxxxxxxxxxxxxx",
     },
     legal: {
       copyright: "Praice Negócios Imobiliários - Todos os direitos reservados.",
