@@ -254,11 +254,11 @@ export const content = {
     },
 
     contact: {
-      address: "XXXXXXX XXX, XXX - XX",
+      address: "Av da emancipação 3770, 13186-000",
       phone: "(19) 97114-2860",
       email: "xxxx@xxxx.com",
       whatsapp: "5519971142860",
-      cnpj: "xxxxxxxxxxxxxxxxx",
+      cnpj: "38.481.407/0001-50",
     },
     legal: {
       copyright: "Praice Negócios Imobiliários - Todos os direitos reservados.",
