@@ -36,7 +36,7 @@ export function FAQ() {
               >
                 <button
                   onClick={() => toggleItem(index)}
-                  className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-surface/50 transition-colors duration-300"
+                  className="w-full px-8 py-6 text-left flex items-center justify-between transition-colors duration-300"
                 >
                   <span className="font-semibold text-lg text-text-primary pr-4">
                     {item.question}
@@ -49,7 +49,7 @@ export function FAQ() {
                 </button>
 
                 <div
-                  className={`px-8 pb-6 transition-all duration-300 ${
+                  className={`px-8 pb-2 transition-all duration-300 ${
                     isOpen
                       ? "max-h-96 opacity-100"
                       : "max-h-0 opacity-0 overflow-hidden"

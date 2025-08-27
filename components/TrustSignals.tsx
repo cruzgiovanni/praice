@@ -1,5 +1,13 @@
-import { Shield, Factory, Award, TrendingDown, Truck, Leaf, Star } from 'lucide-react';
-import { content } from '@/data/content';
+import {
+  Shield,
+  Factory,
+  Award,
+  TrendingDown,
+  Truck,
+  Leaf,
+  Star,
+} from "lucide-react"
+import { content } from "@/data/content"
 
 const iconMap = {
   Shield,
@@ -7,8 +15,8 @@ const iconMap = {
   Award,
   TrendingDown,
   Truck,
-  Leaf
-};
+  Leaf,
+}
 
 export function TrustSignals() {
   return (
@@ -26,8 +34,8 @@ export function TrustSignals() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {content.trust.signals.map((signal, index) => {
-            const IconComponent = iconMap[signal.icon as keyof typeof iconMap];
-            
+            const IconComponent = iconMap[signal.icon as keyof typeof iconMap]
+
             return (
               <div
                 key={index}
@@ -43,7 +51,7 @@ export function TrustSignals() {
                   {signal.description}
                 </p>
               </div>
-            );
+            )
           })}
         </div>
 
@@ -52,25 +60,27 @@ export function TrustSignals() {
           <h3 className="font-serif text-3xl font-medium text-center text-text-primary mb-12">
             O Que Nossos Clientes Dizem
           </h3>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {content.trust.testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-white p-8 rounded-2xl shadow-card"
-              >
+              <div key={index} className="bg-white p-8 rounded-2xl shadow-card">
                 <div className="flex items-center mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-warning fill-current" />
+                    <Star
+                      key={i}
+                      className="w-5 h-5 text-warning fill-current"
+                    />
                   ))}
                 </div>
-                
+
                 <blockquote className="text-lg text-text-primary mb-6 leading-relaxed">
-                  "{testimonial.content}"
+                  &ldquo;{testimonial.content}&rdquo;
                 </blockquote>
-                
+
                 <footer>
-                  <div className="font-semibold text-text-primary">{testimonial.name}</div>
+                  <div className="font-semibold text-text-primary">
+                    {testimonial.name}
+                  </div>
                   <div className="text-text-secondary">{testimonial.role}</div>
                 </footer>
               </div>
@@ -79,5 +89,5 @@ export function TrustSignals() {
         </div>
       </div>
     </section>
-  );
+  )
 }

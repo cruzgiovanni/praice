@@ -12,6 +12,13 @@ import {
   Sparkles,
 } from "lucide-react"
 import { content } from "@/data/content"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const products = [
   {
@@ -29,7 +36,7 @@ const products = [
       "Otimização de espaço",
       "Design contemporâneo",
     ],
-    priceFrom: "R$ 8.900",
+    highlight: "Integração sob medida que amplia espaços.",
   },
   {
     id: 2,
@@ -46,7 +53,7 @@ const products = [
       "Cabeceiras exclusivas",
       "Criados-mudos integrados",
     ],
-    priceFrom: "R$ 5.400",
+    highlight: "Conforto acústico e organização inteligente.",
   },
   {
     id: 3,
@@ -54,8 +61,7 @@ const products = [
     description:
       "Espaços gourmet que transformam o ato de cozinhar em uma experiência prazerosa",
     icon: ChefHat,
-    image:
-      "https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/6489127/pexels-photo-6489127.jpeg",
     hoverImage:
       "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=800",
     features: [
@@ -63,7 +69,7 @@ const products = [
       "Armários até o teto",
       "Ilhas multifuncionais",
     ],
-    priceFrom: "R$ 12.200",
+    highlight: "Fluxo perfeito entre preparo e convivência.",
   },
   {
     id: 4,
@@ -80,7 +86,7 @@ const products = [
       "Estantes modulares",
       "Iluminação integrada",
     ],
-    priceFrom: "R$ 3.800",
+    highlight: "Ergonomia, acústica e estética alinhadas.",
   },
   {
     id: 5,
@@ -93,7 +99,7 @@ const products = [
     hoverImage:
       "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=800",
     features: ["Móveis sob medida", "Espelhos iluminados", "Nichos integrados"],
-    priceFrom: "R$ 4.200",
+    highlight: "Materiais resistentes e sensorialidade de spa.",
   },
 ]
 
@@ -128,9 +134,9 @@ export function ProductsSection() {
           </p>
         </div>
 
-        {/* Products Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          {/* Featured Product */}
+        {/* Products Desktop Grid */}
+        <div className="hidden lg:grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+          {/* Featured Product - LEFT SIDE PC VERSION */}
           <div className="lg:row-span-2">
             <div className="relative h-[600px] rounded-3xl overflow-hidden group">
               <Image
@@ -164,10 +170,9 @@ export function ProductsSection() {
                       {products.find((p) => p.id === selectedProduct)?.name}
                     </h3>
                     <p className="text-white/80">
-                      A partir de{" "}
                       {
                         products.find((p) => p.id === selectedProduct)
-                          ?.priceFrom
+                          ?.highlight
                       }
                     </p>
                   </div>
@@ -190,15 +195,15 @@ export function ProductsSection() {
                     ))}
                 </div>
 
-                <button className="inline-flex items-center space-x-2 px-6 py-3 bg-cognac hover:bg-accent text-white font-medium rounded-full transition-all duration-300 hover:shadow-elevated hover:scale-105">
+                {/* <button className="inline-flex items-center space-x-2 px-6 py-3 bg-cognac hover:bg-accent text-white font-medium rounded-full transition-all duration-300 hover:shadow-elevated hover:scale-105">
                   <span>Ver Detalhes</span>
                   <ArrowRight className="w-5 h-5" />
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
 
-          {/* Product Cards */}
+          {/* Product Cards - RIGHT SIDE PC VERSION */}
           <div className="space-y-4">
             {products.map((product) => (
               <div
@@ -246,7 +251,7 @@ export function ProductsSection() {
                           : "text-text-secondary"
                       }`}
                     >
-                      A partir de {product.priceFrom}
+                      {product.highlight}
                     </p>
                   </div>
 
@@ -259,16 +264,65 @@ export function ProductsSection() {
                   />
                 </div>
 
-                {selectedProduct === product.id && (
-                  <div className="mt-4 pt-4 border-t border-white/20">
-                    <p className="text-white/90 text-sm leading-relaxed">
-                      {product.description}
-                    </p>
-                  </div>
-                )}
+                {/* Removed expanded duplicate description to avoid repetition with featured panel */}
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Products Mobile Carousel */}
+        <div className="lg:hidden mb-16">
+          <Carousel opts={{ align: "start", loop: true }}>
+            <CarouselContent>
+              {products.map((product) => (
+                <CarouselItem key={product.id}>
+                  <div className="rounded-3xl overflow-hidden bg-white shadow-card">
+                    <div className="relative h-64">
+                      <Image
+                        src={product.image}
+                        alt={product.name}
+                        fill
+                        className="object-cover"
+                        sizes="100vw"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                      <div className="absolute bottom-4 left-4 right-4 text-white">
+                        <div className="flex items-center space-x-3 mb-2">
+                          <div className="p-2 bg-white/20 backdrop-blur-sm rounded-full">
+                            <product.icon className="w-5 h-5" />
+                          </div>
+                          <h3 className="text-2xl font-serif font-medium">
+                            {product.name}
+                          </h3>
+                        </div>
+                        <p className="text-white/85 text-sm">
+                          {product.highlight}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="p-4">
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {product.features.map((feature, index) => (
+                          <span
+                            key={index}
+                            className="px-3 py-1 bg-surface rounded-full text-sm text-text-secondary"
+                          >
+                            {feature}
+                          </span>
+                        ))}
+                      </div>
+                      {/* <button className="w-full inline-flex items-center justify-center space-x-2 px-5 py-3 bg-cognac hover:bg-accent text-white font-medium rounded-full transition-all duration-300">
+                        <span>Ver Detalhes</span>
+                        <ArrowRight className="w-5 h-5" />
+                      </button> */}
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="-left-3" />
+            <CarouselNext className="-right-3" />
+          </Carousel>
         </div>
 
         {/* CTA Section */}

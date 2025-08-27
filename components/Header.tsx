@@ -1,7 +1,7 @@
 "use client"
 
-import { Home } from "lucide-react"
 import { content } from "@/data/content"
+import Image from "next/image"
 
 export function Header() {
   return (
@@ -10,7 +10,15 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Home className="w-8 h-8 text-accent" />
+            <div className="relative w-8 h-8">
+              <Image
+                src="/praice.avif"
+                alt="Praice Logo"
+                fill
+                className="object-cover rounded-full"
+                sizes="32px"
+              />
+            </div>
             <div className="flex flex-col">
               <span className="font-serif text-xl font-medium text-text-primary">
                 {content.brand.name}

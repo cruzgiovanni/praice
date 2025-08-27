@@ -1,7 +1,6 @@
 "use client"
 
 import {
-  Home,
   Instagram,
   Facebook,
   Linkedin,
@@ -10,6 +9,7 @@ import {
   MapPin,
 } from "lucide-react"
 import { content } from "@/data/content"
+import Image from "next/image"
 
 export function Footer() {
   const iconMap = {
@@ -26,7 +26,15 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <Home className="w-8 h-8 text-cognac" />
+              <div className="relative w-20 h-20">
+                <Image
+                  src="/praice.avif"
+                  alt="Praice Logo"
+                  fill
+                  className="object-cover rounded-full"
+                  sizes="64px"
+                />
+              </div>
               <div className="flex flex-col">
                 <span className="font-serif text-xl font-medium">
                   {content.brand.name}
@@ -51,6 +59,8 @@ export function Footer() {
                     href={social.href}
                     className="p-2 bg-white/10 rounded-full hover:bg-cognac transition-all duration-300 hover:scale-110"
                     aria-label={social.name}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <IconComponent className="w-5 h-5" />
                   </a>

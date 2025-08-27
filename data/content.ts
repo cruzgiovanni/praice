@@ -79,9 +79,9 @@ export const content = {
         description:
           "Sala e cozinha em harmonia perfeita, otimizando cada metro quadrado",
         image:
-          "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "https://images.pexels.com/photos/7195742/pexels-photo-7195742.jpeg",
         roomContext:
-          "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "https://images.pexels.com/photos/7195742/pexels-photo-7195742.jpeg",
         itemCount: "12+ peças",
         priceRange: "A partir de R$ 8.900",
         isNew: true,
@@ -92,9 +92,9 @@ export const content = {
         description:
           "Móveis planejados que criam um refúgio de tranquilidade e organização",
         image:
-          "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "https://images.pexels.com/photos/21345931/pexels-photo-21345931.png",
         roomContext:
-          "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "https://images.pexels.com/photos/21345931/pexels-photo-21345931.png",
         itemCount: "8+ peças",
         priceRange: "A partir de R$ 5.400",
       },
@@ -104,9 +104,9 @@ export const content = {
         description:
           "Design funcional que transforma cozinhas compactas em espaços de chef",
         image:
-          "https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "https://images.pexels.com/photos/7214449/pexels-photo-7214449.jpeg",
         roomContext:
-          "https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "https://images.pexels.com/photos/7214449/pexels-photo-7214449.jpeg",
         itemCount: "15+ peças",
         priceRange: "A partir de R$ 12.200",
       },
@@ -116,9 +116,9 @@ export const content = {
         description:
           "Workspace integrado que une produtividade e design sofisticado",
         image:
-          "https://images.pexels.com/photos/4050388/pexels-photo-4050388.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "https://images.pexels.com/photos/2349211/pexels-photo-2349211.jpeg",
         roomContext:
-          "https://images.pexels.com/photos/4050388/pexels-photo-4050388.jpeg?auto=compress&cs=tinysrgb&w=1200",
+          "https://images.pexels.com/photos/2349211/pexels-photo-2349211.jpeg",
         itemCount: "6+ peças",
         priceRange: "A partir de R$ 3.800",
         isNew: true,
@@ -169,7 +169,7 @@ export const content = {
         name: "Marina Silva",
         role: "Arquiteta",
         content:
-          "A qualidade dos móveis da Casa Luxe superou todas as minhas expectativas. O acabamento é impecável e o atendimento, excepcional.",
+          "A qualidade dos móveis da Praice superou todas as minhas expectativas. O acabamento é impecável e o atendimento, excepcional.",
         rating: 5,
       },
       {
@@ -228,7 +228,7 @@ export const content = {
       social: [
         {
           name: "Instagram",
-          href: "https://instagram.com/praice",
+          href: "https://instagram.com/",
           icon: "Instagram",
         },
       ],
