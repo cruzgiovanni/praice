@@ -29,7 +29,7 @@ export const content = {
       {
         id: 1,
         image:
-          "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1920",
+          "https://images.pexels.com/photos/7045306/pexels-photo-7045306.jpeg?auto=compress&cs=tinysrgb&w=1920",
         title: "Transforme Seu Apartamento em um Lar de Sonhos",
         subtitle:
           "Móveis planejados de luxo, 100% MDF, com garantia de 5 anos e preços excepcionais",
@@ -47,7 +47,7 @@ export const content = {
       {
         id: 3,
         image:
-          "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920",
+          "https://images.pexels.com/photos/7031718/pexels-photo-7031718.jpeg?auto=compress&cs=tinysrgb&w=1920",
         title: "Design Sob Medida Para Seu Estilo de Vida",
         subtitle:
           "Soluções personalizadas que maximizam espaços e refletem sua personalidade",
@@ -60,41 +60,41 @@ export const content = {
   products: [
     {
       id: 1,
-      name: "Living Integrado",
+      name: "Guarda Roupa Casal",
       description:
-        "Ambientes conectados que maximizam espaços e criam fluidez perfeita entre sala e cozinha",
+        "Soluções inteligentes de armazenamento para casais com organização otimizada e design elegante",
       icon: "Home",
       image:
-        "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/9646754/pexels-photo-9646754.jpeg?auto=compress&cs=tinysrgb&w=800",
       hoverImage:
-        "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/9646754/pexels-photo-9646754.jpeg?auto=compress&cs=tinysrgb&w=800",
       features: [
-        "Móveis multifuncionais",
-        "Otimização de espaço",
-        "Design contemporâneo",
+        "Compartimentos organizados",
+        "Gavetas com sistema soft-close",
+        "Cabides integrados",
       ],
-      highlight: "Integração sob medida que amplia espaços.",
+      highlight: "Organização inteligente para o casal moderno.",
     },
     {
       id: 2,
-      name: "Quartos",
+      name: "Guarda Roupa Solteiro",
       description:
-        "Refúgios de tranquilidade com soluções inteligentes de armazenamento e conforto",
+        "Armazenamento compacto e funcional para solteiros com aproveitamento máximo do espaço",
       icon: "Bed",
       image:
-        "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/19878542/pexels-photo-19878542.jpeg?auto=compress&cs=tinysrgb&w=800",
       hoverImage:
-        "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/19878542/pexels-photo-19878542.jpeg?auto=compress&cs=tinysrgb&w=800",
       features: [
-        "Guarda-roupas planejados",
-        "Cabeceiras exclusivas",
-        "Criados-mudos integrados",
+        "Design compacto",
+        "Múltiplas gavetas",
+        "Prateleiras ajustáveis",
       ],
-      highlight: "Conforto acústico e organização inteligente.",
+      highlight: "Funcionalidade e estilo para o solteiro urbano.",
     },
     {
       id: 3,
-      name: "Cozinhas",
+      name: "Cozinha",
       description:
         "Espaços gourmet que transformam o ato de cozinhar em uma experiência prazerosa",
       icon: "ChefHat",
@@ -111,37 +111,37 @@ export const content = {
     },
     {
       id: 4,
-      name: "Home Office",
+      name: "Lavanderia",
       description:
-        "Escritórios integrados que unem produtividade e design em perfeita harmonia",
+        "Espaços funcionais para lavagem e organização de roupas com máxima eficiência",
       icon: "Monitor",
       image:
-        "https://images.pexels.com/photos/4050388/pexels-photo-4050388.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/4993073/pexels-photo-4993073.jpeg?auto=compress&cs=tinysrgb&w=800",
       hoverImage:
-        "https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/4993073/pexels-photo-4993073.jpeg?auto=compress&cs=tinysrgb&w=800",
       features: [
-        "Mesas ergonômicas",
-        "Estantes modulares",
-        "Iluminação integrada",
+        "Máquinas integradas",
+        "Armários organizadores",
+        "Área de passadoria",
       ],
-      highlight: "Ergonomia, acústica e estética alinhadas.",
+      highlight: "Eficiência e organização para suas roupas.",
     },
     {
       id: 5,
-      name: "Banheiros",
+      name: "Banho Social",
       description:
-        "Spas pessoais com acabamentos luxuosos e funcionalidade excepcional",
+        "Banheiros elegantes para receber visitas com acabamentos sofisticados e funcionalidade",
       icon: "Bath",
       image:
-        "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/8134749/pexels-photo-8134749.jpeg?auto=compress&cs=tinysrgb&w=800",
       hoverImage:
-        "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/8134749/pexels-photo-8134749.jpeg?auto=compress&cs=tinysrgb&w=800",
       features: [
         "Móveis sob medida",
         "Espelhos iluminados",
         "Nichos integrados",
       ],
-      highlight: "Materiais resistentes e sensorialidade de spa.",
+      highlight: "Elegância e funcionalidade para receber visitas.",
     },
   ],
 
@@ -254,9 +254,9 @@ export const content = {
     },
 
     contact: {
-      address: "Av da emancipação 3770, 13186-000",
+      address: "Av da Emancipação 3770, 13186-000",
       phone: "(19) 97114-2860",
-      email: "xxxx@xxxx.com",
+      email: "xxxx@gmail.com",
       whatsapp: "5519971142860",
       cnpj: "38.481.407/0001-50",
     },
