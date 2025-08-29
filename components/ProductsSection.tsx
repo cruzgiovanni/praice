@@ -50,8 +50,8 @@ export function ProductsSection() {
           </div>
 
           <h2 className="font-extrabold text-5xl md:text-6xl text-text-primary mb-6 leading-tight">
-            Ambientes que
-            <span className="block text-cognac">Inspiram Vida</span>
+            Confira 5 Ambientes Sob Medida para
+            <span className="block text-cognac">Seu Apartamento</span>
           </h2>
 
           <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
@@ -278,8 +278,8 @@ export function ProductsSection() {
             Pronto para Transformar Seu Lar?
           </h3>
           <p className="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
-            Agende uma consulta gratuita e descubra como podemos criar o
-            ambiente dos seus sonhos.
+            Faça seu orçamento e descubra como podemos criar o ambiente dos seus
+            sonhos.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">

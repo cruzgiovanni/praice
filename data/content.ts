@@ -19,17 +19,17 @@ export const content = {
       {
         id: 0,
         image:
-          "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920",
+          "https://images.pexels.com/photos/7005281/pexels-photo-7005281.jpeg?auto=compress&cs=tinysrgb&w=1920",
         title: "APARTAMENTO COMPLETO BRANCO",
-        subtitle: "5 AMBIENTES | ATÉ 56MTS²",
+        subtitle: "5 AMBIENTES | ATÉ 56M²",
         price: "R$17.680",
-        paymentInfo: "À VISTA | OU 18X DE R$1.180 NO CARTÃO",
+        paymentInfo: "À VISTA | OU 18X DE R$1.180 NO CARTÃO OU BOLETO",
         cta: "Solicite Seu Orçamento",
       },
       {
         id: 1,
         image:
-          "https://images.pexels.com/photos/7045306/pexels-photo-7045306.jpeg?auto=compress&cs=tinysrgb&w=1920",
+          "https://images.pexels.com/photos/6636302/pexels-photo-6636302.jpeg?auto=compress&cs=tinysrgb&w=1920",
         title: "Transforme Seu Apartamento em um Lar de Sonhos",
         subtitle:
           "Móveis planejados de luxo, 100% MDF, com garantia de 5 anos e preços excepcionais",
@@ -68,11 +68,7 @@ export const content = {
         "https://images.pexels.com/photos/9646754/pexels-photo-9646754.jpeg?auto=compress&cs=tinysrgb&w=800",
       hoverImage:
         "https://images.pexels.com/photos/9646754/pexels-photo-9646754.jpeg?auto=compress&cs=tinysrgb&w=800",
-      features: [
-        "Compartimentos organizados",
-        "Gavetas com sistema soft-close",
-        "Cabides integrados",
-      ],
+      features: ["Gaveteiro", "Sapateira", "Pratileiras", "Cabides integrados"],
       highlight: "Organização inteligente para o casal moderno.",
     },
     {
@@ -87,8 +83,10 @@ export const content = {
         "https://images.pexels.com/photos/19878542/pexels-photo-19878542.jpeg?auto=compress&cs=tinysrgb&w=800",
       features: [
         "Design compacto",
-        "Múltiplas gavetas",
-        "Prateleiras ajustáveis",
+        "Gaveteiro",
+        "Sapateira",
+        "Pratileiras",
+        "Cabides integrados",
       ],
       highlight: "Funcionalidade e estilo para o solteiro urbano.",
     },
@@ -103,9 +101,10 @@ export const content = {
       hoverImage:
         "https://images.pexels.com/photos/6489127/pexels-photo-6489127.jpeg?auto=compress&cs=tinysrgb&w=800",
       features: [
-        "Bancadas em quartzo",
-        "Armários até o teto",
-        "Ilhas multifuncionais",
+        "Gaveteiro",
+        "Armários embutidos",
+        "Espaço para fogão ou cooktop",
+        "Armários superiores e inferiores",
       ],
       highlight: "Fluxo perfeito entre preparo e convivência.",
     },
@@ -120,9 +119,9 @@ export const content = {
       hoverImage:
         "https://images.pexels.com/photos/4993073/pexels-photo-4993073.jpeg?auto=compress&cs=tinysrgb&w=800",
       features: [
-        "Máquinas integradas",
-        "Armários organizadores",
-        "Área de passadoria",
+        "Armário aéreo",
+        "Prateleiras funcionais",
+        "Espaço reservado para máquina de lavar",
       ],
       highlight: "Eficiência e organização para suas roupas.",
     },
@@ -137,9 +136,9 @@ export const content = {
       hoverImage:
         "https://images.pexels.com/photos/8134749/pexels-photo-8134749.jpeg?auto=compress&cs=tinysrgb&w=800",
       features: [
-        "Móveis sob medida",
-        "Espelhos iluminados",
-        "Nichos integrados",
+        "Portas ou gavetões",
+        "Gabinete inferior para cuba",
+        "Prateleiras para otimizar o espaço",
       ],
       highlight: "Elegância e funcionalidade para receber visitas.",
     },
@@ -167,33 +166,24 @@ export const content = {
         title: "100% MDF Premium",
         description: "Material de primeira qualidade, resistente e durável",
       },
-      {
-        icon: "TrendingDown",
-        title: "Até 20% de Economia",
-        description: "Preços excepcionais sem comprometer a qualidade superior",
-      },
+
       {
         icon: "Truck",
         title: "Entrega Garantida",
         description: "Prazos cumpridos e instalação profissional incluída",
       },
-      {
-        icon: "Leaf",
-        title: "Sustentabilidade",
-        description: "Compromisso com o meio ambiente em todos os processos",
-      },
     ],
     testimonials: [
       {
         name: "Marina Silva",
-        role: "Arquiteta",
+        location: "Monte Mor",
         content:
           "A qualidade dos móveis da Praice superou todas as minhas expectativas. O acabamento é impecável e o atendimento, excepcional.",
         rating: 5,
       },
       {
         name: "Roberto Mendes",
-        role: "Proprietário",
+        location: "Hortolândia",
         content:
           "Transformaram meu apartamento de 45m² em um espaço incrível. A economia foi significativa e o resultado, profissional.",
         rating: 5,
@@ -206,11 +196,6 @@ export const content = {
     title: "Perguntas Frequentes",
     subtitle: "Esclarecemos suas principais dúvidas",
     items: [
-      {
-        question: "Qual é o prazo de entrega dos móveis planejados?",
-        answer:
-          "O prazo padrão é de 30 a 45 dias úteis após a aprovação do projeto e confirmação do pedido. Prazos podem variar conforme complexidade do projeto.",
-      },
       {
         question: "A instalação está incluída no valor?",
         answer:
@@ -234,7 +219,7 @@ export const content = {
       {
         question: "Qual é a forma de pagamento?",
         answer:
-          "Aceitamos cartão de crédito (até 12x), PIX com desconto, boleto bancário e financiamento próprio com condições especiais.",
+          "Aceitamos cartão de crédito (até 18x), PIX e boleto bancário (até 18x).",
       },
     ],
   },
@@ -247,8 +232,13 @@ export const content = {
       social: [
         {
           name: "Instagram",
-          href: "https://instagram.com/",
+          href: "https://www.instagram.com/praice_negociosmobiliarios/",
           icon: "Instagram",
+        },
+        {
+          name: "Facebook",
+          href: "https://www.instagram.com/praice_negociosmobiliarios/",
+          icon: "Facebook",
         },
       ],
     },

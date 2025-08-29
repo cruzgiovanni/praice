@@ -54,7 +54,7 @@ export function HeroCarousel() {
             <div className="max-w-4xl mx-auto px-6 lg:px-8">
               <div className="flex items-center justify-center gap-2 py-12 text-white/80 drop-shadow-2xl">
                 <Heart className="w-4 h-4 " />
-                <p className="">Hortolândia - Sumaré - Monte Mor</p>
+                <p className="">Monte Mor - Hortolândia - Sumaré </p>
               </div>
               {slide.price ? (
                 <div className="space-y-6">

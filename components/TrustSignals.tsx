@@ -81,7 +81,9 @@ export function TrustSignals() {
                   <div className="font-semibold text-text-primary">
                     {testimonial.name}
                   </div>
-                  <div className="text-text-secondary">{testimonial.role}</div>
+                  <div className="text-text-secondary">
+                    {testimonial.location}
+                  </div>
                 </footer>
               </div>
             ))}
