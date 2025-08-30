@@ -32,7 +32,7 @@ export function FAQ() {
             return (
               <div
                 key={index}
-                className="border border-gray-200 rounded-2xl overflow-hidden hover:shadow-card transition-shadow duration-300"
+                className="border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md transition-shadow duration-300"
               >
                 <button
                   onClick={() => toggleItem(index)}

@@ -32,16 +32,16 @@ export function TrustSignals() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20 justify-items-center">
           {content.trust.signals.map((signal, index) => {
             const IconComponent = iconMap[signal.icon as keyof typeof iconMap]
 
             return (
               <div
                 key={index}
-                className="text-center p-8 rounded-2xl bg-white/80 backdrop-blur-sm hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 group"
+                className="text-center p-10 rounded-2xl bg-white/80 backdrop-blur-sm hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 group"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-cognac/10 rounded-full mb-6 group-hover:bg-cognac/20 transition-colors duration-300">
+                <div className=" inline-flex items-center justify-center w-16 h-16 bg-cognac/10 rounded-full mb-6 group-hover:bg-cognac/20 transition-colors duration-300">
                   <IconComponent className="w-8 h-8 text-cognac" />
                 </div>
                 <h3 className="font-semibold text-xl text-text-primary mb-3">

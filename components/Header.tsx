@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-white/20">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-white/20 shadow-lg">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -30,7 +30,7 @@ export function Header() {
           </div>
 
           {/* CTA Button */}
-          <div>
+          <div className="max-[600px]:hidden">
             <button className="px-6 py-2 bg-cognac text-white text-sm font-medium rounded-full hover:bg-accent transition-all duration-300 hover:shadow-elevated">
               <a
                 href={`https://wa.me/${content.whatsapp.number}?text=${content.whatsapp.message}`}
