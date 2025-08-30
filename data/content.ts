@@ -235,11 +235,11 @@ export const content = {
           href: "https://www.instagram.com/praice_negociosmobiliarios/",
           icon: "Instagram",
         },
-        {
-          name: "Facebook",
-          href: "https://www.instagram.com/praice_negociosmobiliarios/",
-          icon: "Facebook",
-        },
+        // {
+        //   name: "Facebook",
+        //   href: "https://www.instagram.com/praice_negociosmobiliarios/",
+        //   icon: "Facebook",
+        // },
       ],
     },
 

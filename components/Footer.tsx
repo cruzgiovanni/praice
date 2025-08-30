@@ -88,7 +88,7 @@ export function Footer() {
                 </a>
               </div>
 
-              <div className="flex items-center space-x-3">
+              {/* <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-cognac flex-shrink-0" />
                 <a
                   href={`mailto:${content.footer.contact.email}`}
@@ -96,7 +96,7 @@ export function Footer() {
                 >
                   {content.footer.contact.email}
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
