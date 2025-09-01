@@ -23,7 +23,8 @@ export const content = {
         title: "APARTAMENTO COMPLETO BRANCO",
         subtitle: "5 AMBIENTES | ATÉ 56M²",
         price: "R$17.680",
-        paymentInfo: "À VISTA | OU 18X DE R$1.180 NO CARTÃO OU BOLETO",
+        paymentInfo:
+          "À VISTA | OU 18X DE R$1.180 NO CARTÃO | OU 18X DE R$1.340 NO BOLETO",
         cta: "Solicite Seu Orçamento",
       },
       {
