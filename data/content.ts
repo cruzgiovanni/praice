@@ -2,7 +2,7 @@ export const content = {
   // Brand Information
   brand: {
     name: "Praice",
-    tagline: "Negócios Imobiliários",
+    tagline: "Negócios Mobiliários",
     description:
       "Móveis planejados de luxo com expertise em apartamentos. Qualidade superior, garantia de 5 anos e preços até 20% abaixo do mercado.",
   },
@@ -252,7 +252,7 @@ export const content = {
       cnpj: "38.481.407/0001-50",
     },
     legal: {
-      copyright: "Praice Negócios Imobiliários - Todos os direitos reservados.",
+      copyright: "Praice Negócios Mobiliários - Todos os direitos reservados.",
     },
   },
 
