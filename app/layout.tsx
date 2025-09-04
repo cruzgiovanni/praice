@@ -1,6 +1,7 @@
 import "./globals.css"
 import type { Metadata } from "next"
 import { Inter, Playfair_Display } from "next/font/google"
+import Script from "next/script"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -82,6 +83,20 @@ export default function RootLayout({
           content="#654321"
           media="(prefers-color-scheme: dark)"
         />
+
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17532297943"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17532297943');
+          `}
+        </Script>
       </head>
       <body
         className={`${inter.variable} ${playfairDisplay.variable} font-sans antialiased`}
